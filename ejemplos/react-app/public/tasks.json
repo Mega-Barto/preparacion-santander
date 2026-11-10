@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Leer el cheatsheet de React",
+    "description": "docs/frontend/react/00-cheatsheet.md",
+    "status": "pending",
+    "createdAt": "2026-11-10T12:00:00+00:00"
+  },
+  {
+    "id": 2,
+    "title": "Probar el contexto",
+    "description": "Crea una tarea y vuelve al listado",
+    "status": "in_progress",
+    "createdAt": "2026-11-10T12:05:00+00:00"
+  }
+]

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tareas{% endblock %}
+
+{% block body %}
+    <h1>Tareas</h1>
+    {% if tasks is empty %}
+        <p>No hay tareas. <a href="{{ path('task_new') }}">Crear la primera</a>.</p>
+    {% else %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Estado</th>
+                    <th>Creada</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                    <tr>
+                        <td><a href="{{ path('task_show', {id: task.id}) }}">{{ task.title }}</a></td>
+                        <td>{{ task.status }}</td>
+                        <td>{{ task.createdAt|date('Y-m-d H:i') }}</td>
+                        <td><a href="{{ path('task_edit', {id: task.id}) }}">Editar</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock %}

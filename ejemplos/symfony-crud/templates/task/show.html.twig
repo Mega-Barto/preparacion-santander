@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ task.title }}{% endblock %}
+
+{% block body %}
+    <h1>{{ task.title }}</h1>
+    <p>{{ task.description ?: 'Sin descripción' }}</p>
+    <p>Estado: {{ task.status }}</p>
+    <p>Creada: {{ task.createdAt|date('Y-m-d H:i') }}</p>
+    <p>
+        <a href="{{ path('task_edit', {id: task.id}) }}">Editar</a>
+    </p>
+    <form method="post" action="{{ path('task_delete', {id: task.id}) }}">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ task.id) }}">
+        <button type="submit">Eliminar</button>
+    </form>
+{% endblock %}
