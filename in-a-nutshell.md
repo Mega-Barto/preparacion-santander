@@ -7,6 +7,7 @@ Referencia offline para la prueba técnica. Textos en español; código y rutas 
 | Bloque | Para qué |
 |---|---|
 | `docs/` | Apuntes. El `00-cheatsheet.md` cabe en una pantalla; `01+` es detalle para copiar |
+| `docs/marca/` | Press kit Home Elements: colores, tipografía y lineamientos |
 | `ejemplos/` | Un mini-proyecto por tecnología, independientes |
 | `integracion/` | Task Manager real: Symfony API + Vue + React + PostgreSQL |
 | `snippets/` | Pegar: DB, fetch, CRUD, JWT, validaciones |

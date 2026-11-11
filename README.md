@@ -8,6 +8,8 @@ Mapa de todo el repo en una sola lectura: [in-a-nutshell.md](in-a-nutshell.md).
 
 Los textos están en español. Los nombres de clases, variables y rutas están en inglés.
 
+Identidad de marca (Home Elements): [docs/marca/press-kit.md](docs/marca/press-kit.md).
+
 ## Documentación
 
 | Tecnología | Entrada |
