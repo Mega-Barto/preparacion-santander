@@ -96,6 +96,15 @@ psql -U postgres -h 127.0.0.1 -c "SELECT version();"
 
 Si pide contraseña y no la sabes, prueba en este orden: vacía (pulsa Enter), `postgres`, `admin`, la clave que te hayan dado en el enunciado.
 
+Cliente gráfico: si aparece **pgAdmin** en el menú Inicio, úsalo para crear BD y pegar SQL. Si no, o prefieres el navegador y PHP funciona, Adminer va en el repo:
+
+```powershell
+cd tools
+php -S 127.0.0.1:8081 adminer-6.3.0.php
+```
+
+http://127.0.0.1:8081 — pasos en [tools/README.md](tools/README.md). Sin PHP o sin permiso, quédate en `psql`.
+
 Usuario distinto:
 
 ```powershell

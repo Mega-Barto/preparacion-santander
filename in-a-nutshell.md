@@ -11,6 +11,7 @@ Referencia offline para la prueba técnica. Textos en español; código y rutas 
 | `ejemplos/` | Un mini-proyecto por tecnología, independientes |
 | `integracion/` | Task Manager real: Symfony API + Vue + React + PostgreSQL |
 | `snippets/` | Pegar: DB, fetch, CRUD, JWT, validaciones |
+| `tools/` | Adminer (cliente Postgres en navegador); opcional, ver [tools/README.md](tools/README.md) |
 
 ## Stack de referencia
 
@@ -35,6 +36,7 @@ Symfony **6.4** (PHP 8.1+) · Spring Boot **3.3** (Java 17+) · PostgreSQL **14�
 | 5175 | React ejemplo (sin API) |
 | 3000 | React integración |
 | 5432 | PostgreSQL |
+| 8081 | Adminer (`tools/`, opcional; no confundir con Spring en 8080) |
 
 ## Documentación (entrada rápida)
 
@@ -97,6 +99,10 @@ npm run dev
 # PostgreSQL
 psql -U postgres -h 127.0.0.1 -c "SELECT version();"
 Get-Service *postgres*
+
+# Adminer (opcional)
+cd tools
+php -S 127.0.0.1:8081 adminer-6.3.0.php
 ```
 
 ## Snippets
@@ -115,7 +121,7 @@ Get-Service *postgres*
 - **Spring**: capas Controller → Service → Repository → Entity; `ddl-auto=update` en demo.
 - **Vue**: `<script setup>`, `ref`/`reactive`, Pinia para estado, `:key` en listas.
 - **React**: no mutar estado, `useEffect(..., [])` al montar, `key={id}`, Context en la integración.
-- **Postgres**: sin servicio no hay persistencia; sin `pdo_pgsql` Symfony no conecta.
+- **Postgres**: sin servicio no hay persistencia; sin `pdo_pgsql` Symfony no conecta. Cliente: pgAdmin → `psql` → Adminer en `tools/`.
 - **Sin red / sin backend**: enseña `vue-app` / `react-app` (JSON local) o scripts SQL.
 
 ## Plan B express
@@ -127,6 +133,7 @@ Get-Service *postgres*
 | Java 11 | apuntar `JAVA_HOME` a JDK 17+ |
 | Puerto ocupado | Symfony 8001 · Vue `--port 5176` · React `--port 3001` · Spring `--server.port=8081` |
 | Clave Postgres distinta | copiar la que sí entre a `.env` / `application.properties` |
+| Sin pgAdmin / prefieres GUI | `tools/adminer-6.3.0.php` en `:8081` ([tools/README.md](tools/README.md)) |
 | `npm install` sin red | copiar `src/` a un proyecto ya instalado en el puesto |
 | Nada de backend | `ejemplos/vue-app`, `ejemplos/react-app`, `ejemplos/postgresql-scripts` |
 

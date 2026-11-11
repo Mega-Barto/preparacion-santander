@@ -14,6 +14,8 @@ Crear la base:
 psql -U postgres -c "CREATE DATABASE tasks"
 ```
 
+En navegador (opcional): [tools/README.md](../tools/README.md) — Adminer en `127.0.0.1:8081`. También vale pgAdmin del sistema.
+
 ## Symfony (`.env` o `.env.local`)
 
 ```dotenv

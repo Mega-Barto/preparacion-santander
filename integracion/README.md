@@ -12,11 +12,17 @@ No hace falta levantar los dos frontends a la vez.
 
 ## 1. Base de datos
 
+Con `psql`:
+
 ```powershell
 psql -U postgres -c "CREATE DATABASE tasks"
 psql -U postgres -d tasks -f database/init.sql
 psql -U postgres -d tasks -f database/seed.sql
 ```
+
+Con **pgAdmin** (si está instalado): crea la BD `tasks`, abre Query Tool sobre esa base y ejecuta `database/init.sql` y luego `database/seed.sql`.
+
+Con **Adminer** (navegador, opcional): desde la raíz del repo, `cd tools` y `php -S 127.0.0.1:8081 adminer-6.3.0.php` → http://127.0.0.1:8081. Detalle en [tools/README.md](../tools/README.md).
 
 Si usuario o clave no son `postgres` / `postgres`, edita `backend/.env.local` (créalo a partir de `.env`).
 

@@ -2,6 +2,16 @@
 
 ## Cliente
 
+Orden el día de la prueba: **pgAdmin** (si está en el menú) → **`psql`** → **Adminer** en `tools/` (navegador, opcional).
+
+### pgAdmin
+
+1. Abre pgAdmin 4 → registra servidor `127.0.0.1`, puerto `5432`, usuario/clave los que entren.
+2. Clic derecho en Databases → Create → Database (`tasks`, etc.).
+3. Tools → Query Tool → abre/pega `init.sql` y `seed.sql` **con la BD correcta seleccionada**.
+
+### psql
+
 ```bash
 psql --version
 psql -U postgres -h 127.0.0.1 -p 5432 -d postgres
@@ -20,6 +30,17 @@ Dentro de `psql`:
 | `\q` | salir |
 | `\i init.sql` | ejecutar un archivo |
 | `\x` | salida expandida (una columna por línea) |
+
+### Adminer (navegador)
+
+Detalle: [tools/README.md](../../../tools/README.md).
+
+```powershell
+cd tools
+php -S 127.0.0.1:8081 adminer-6.3.0.php
+```
+
+http://127.0.0.1:8081 — sistema PostgreSQL, servidor `127.0.0.1`, misma clave que `psql`. No lo pongas en `public/` de Symfony.
 
 ## Crear base y rol
 

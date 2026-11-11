@@ -52,12 +52,17 @@ No uses los tres servidores Symfony a la vez (`ejemplos/symfony-crud` y `integra
 | [snippets/auth-jwt.md](snippets/auth-jwt.md) | Lexik JWT y cabecera `Authorization` |
 | [snippets/validaciones.md](snippets/validaciones.md) | Assert, `@Valid`, Vuelidate y Zod |
 
+## Tools
+
+[tools/README.md](tools/README.md) — Adminer 6.3.0 para gestionar PostgreSQL en el navegador (`php -S 127.0.0.1:8081`). Opcional; no sustituye a `psql` ni a pgAdmin del sistema.
+
 ## Puertos
 
 | Servicio | Puerto |
 |---|---|
 | Symfony (ejemplo o integración) | 8000 |
 | Spring Boot | 8080 |
+| Adminer (opcional, `tools/`) | 8081 |
 | Vue de la integración | 5173 |
 | Vue de ejemplo | 5174 |
 | React de ejemplo | 5175 |

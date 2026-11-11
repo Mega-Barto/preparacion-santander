@@ -4,7 +4,7 @@ Dominio de tareas, el mismo que el resto del repositorio. Son scripts comentados
 
 ## Requisitos
 
-PostgreSQL en marcha y el cliente `psql` en el PATH.
+PostgreSQL en marcha y el cliente `psql` en el PATH. Si prefieres navegador: [tools/README.md](../../tools/README.md) (Adminer).
 
 ## Ejecutar
 
