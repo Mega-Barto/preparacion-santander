@@ -7,7 +7,10 @@ const store = useTaskStore()
 
 <template>
   <header>
-    <strong>Symfony + Vue</strong>
+    <div class="brand">
+      <strong>Home Elements</strong>
+      <span>Cada día mejor · Symfony + Vue</span>
+    </div>
     <nav>
       <RouterLink to="/tasks">Tareas ({{ store.pendingCount }} abiertas)</RouterLink>
       <RouterLink to="/tasks/new">Nueva</RouterLink>

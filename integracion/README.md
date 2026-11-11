@@ -84,3 +84,7 @@ La URL base se cambia sin tocar el código:
 
 - Vue y React leen `VITE_API_URL` (hay un `.env.example` en cada frontend).
 - Por defecto es `http://127.0.0.1:8000`.
+
+## Estilos (marca)
+
+Ambos frontends usan la identidad visual de Home Elements (tipografía Ubuntu, tokens de color del press kit). Detalle de tokens, clases y criterios de edición: [css.md](css.md).

@@ -61,7 +61,7 @@ async function remove() {
         <option value="done">Hecha</option>
       </select>
     </label>
-    <button type="button" @click="saveStatus">Guardar estado</button>
+    <button type="button" class="primary" @click="saveStatus">Guardar estado</button>
     <button type="button" @click="remove">Borrar</button>
   </article>
 </template>

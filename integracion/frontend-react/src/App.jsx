@@ -10,7 +10,10 @@ export default function App() {
   return (
     <>
       <header>
-        <strong>Symfony + React</strong>
+        <div className="brand">
+          <strong>Home Elements</strong>
+          <span>Cada día mejor · Symfony + React</span>
+        </div>
         <nav>
           <NavLink to="/tasks">Tareas ({open} abiertas)</NavLink>
           <NavLink to="/tasks/new">Nueva</NavLink>
