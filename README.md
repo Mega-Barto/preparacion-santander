@@ -4,6 +4,8 @@ Material para consultar sin IA: apuntes cortos, un ejemplo por tecnología y un 
 
 Empieza por [verificacion.md](verificacion.md). Ahí está cómo comprobar que PHP, Java, Node y PostgreSQL responden en el equipo, y cómo abrir estos Markdown.
 
+Mapa de todo el repo en una sola lectura: [in-a-nutshell.md](in-a-nutshell.md).
+
 Los textos están en español. Los nombres de clases, variables y rutas están en inglés.
 
 ## Documentación
